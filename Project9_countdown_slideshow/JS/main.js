@@ -1,17 +1,18 @@
-f
-}
 var slideIndex = 0;
-showSlides();
+showSlides(slideIndex);
 
-function showSlides() {
-  var i;
-  var slides=
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+function showSlides(n) {
+   showDivs(slideIndex)
+}
+function showDivs(n){
+    var i;
+    var x=
+    document.getElementByIdClassNames("myslides");
+     if(n>x.length) {slideIndex=1}
+     if(n<1){slideIndex=x.length};
+     for(i=0;  i<x.length; i++){
+         x[i].style.display="non";
+     }
+     x[slideindex-1].style.display="block";
+     setTimeout(carousel,200);
 }
