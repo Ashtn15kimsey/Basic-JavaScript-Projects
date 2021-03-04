@@ -52,14 +52,21 @@ function myFunction(name) {
     return "Hello" +name
   }
   document.getElementById("Ash").innerHTML=myFunction("Ash");
-
+function carFunction()
+{
   let car={
       make:"Dodge",
       model:"Viper",
       year:"2021",
       color:"black",
-      description:function(){
+      description:function() {
           return"The car is a"+this.year+this.color+this.make+this.model;
       }
   };
-  document.getElementById("Car_Object").innerHTML=car.description();
+  document.getElementById("car_Object").innerHTML=car.description();
+  }
+  function breakFunction()
+  for (x = 0; x < 10; x++) {
+    if (x === 3) { break; }
+    text += "The number is " + x + "<br>";
+  }
