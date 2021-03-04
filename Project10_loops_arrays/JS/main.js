@@ -51,4 +51,15 @@ document.write("<br>"+x);
 function myFunction(name) {
     return "Hello" +name
   }
-  document.getElementById("example").innerHTML=myFunction("Ash");
+  document.getElementById("Ash").innerHTML=myFunction("Ash");
+
+  let car={
+      make:"Dodge",
+      model:"Viper",
+      year:"2021",
+      color:"black",
+      description:function(){
+          return"The car is a"+this.year+this.color+this.make+this.model;
+      }
+  };
+  document.getElementById("Car_Object").innerHTML=car.description();
