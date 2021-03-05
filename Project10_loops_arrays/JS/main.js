@@ -23,7 +23,7 @@ function count_To_Ten() {
 }
 
     function cat_pics() {
-        var Cat_picture = [];
+        var Cat_Picture = [];
         Cat_Picture[0] = "sleeping";
         Cat_Picture[1] = "playing";
         Cat_Picture[2] = "eating";
@@ -47,4 +47,4 @@ function count_To_Ten() {
             return "The car is a" + this.year + this.color + this.make + this.model;
         }
     };
-    document.getElementById("Car_Object").innerHTML= car.description();
+    document.getElementById("Car_Object").innerHTML= Car.description();
