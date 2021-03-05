@@ -1,72 +1,22 @@
-function count_To_Ten(){
-}
-    var Digit="";
-    var X=1;
-    while (x<11) {
-        digit +="<br>"+X
-        x++;
-    document.getElementById("Counting_To_Ten").innerHTML=Digit;
-}
-var sports=["soccer","basketball","football","tennis","hockey"];
-var content=""
-var Y;
-function For_Loop() {
-    for (y=0;Y<sports.length; Y++) {
-        content += sports[Y]+"<br>";
+function countdown() {
+    var seconds = document.getElementById("seconds").value;
+
+    function tick() {
+        seconds = seconds -1;
+        timer.innerHTML = seconds;
+        setTimeout(tick, 1000);
+    if(seconds == -1) {
+        alert("Time's up!");
+    }
         }
-        document.getElementById("list_of_sports").innerHTML=content;
-} 
-function cat_pics(){
-    var cat_pictures=[];
-    cat_picture[0]="sleeping";
-    cat_picture[1]="playing";
-    cat_picture[2]="eating";
-    cat_picture[3]="purring";
-    document.getElementById("Cat").innerHTML="in this picture, the cat is"+
-          cat_picture[2]+"";
+    tick();    
 }
-function constant_function(){
-    const nike_shoes={type:"shoes",brand:"nike",color:"black"};
-    nike_shoes.color="blue";
-    nike_shoes.price="$200";
-    document.getElementById("constant").innerHTML="The cost of the"+
-    nike_shoes.type+"was"+nike_shoes.price;
-}
-var x=90;
-document.write(x);
-{
-    let x=33;
-    document.write("<br>"+x);
-}
-document.write("<br>"+x);
 
-var x=90;
-document.write(x);
-{
-    var x=44;
-    document.write("<br>"+x);
-}
-document.write("<br>"+x);
-
-function myFunction(name) {
-    return "Hello" +name
-  }
-  document.getElementById("Ash").innerHTML=myFunction("Ash");
-function carFunction()
-{
-  let car={
-      make:"Dodge",
-      model:"Viper",
-      year:"2021",
-      color:"black",
-      description:function() {
-          return"The car is a"+this.year+this.color+this.make+this.model;
-      }
-  };
-  document.getElementById("car_Object").innerHTML=car.description();
-  }
-  function breakFunction()
-  for (x = 0; x < 10; x++) {
-    if (x === 3) { break; }
-    text += "The number is " + x + "<br>";
-  }
+unction count_To_Ten() {
+    Var Digit = "";
+    Var X = 1;
+    while (X < 11) {
+        Digit +="<br>"+X;
+        X + +;
+    }
+    document.getElementById("Count_To_Ten").innerHTML=Digit;
