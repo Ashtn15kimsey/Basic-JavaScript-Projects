@@ -1,5 +1,5 @@
-function countdown() {
-    var seconds = document.getElementById("seconds").value;
+function Countdown() {
+    Var seconds = document.getElementById("seconds").Value;
 
     function tick() {
         seconds = seconds -1;
@@ -12,11 +12,11 @@ function countdown() {
     tick();    
 }
 
-unction count_To_Ten() {
+function count_To_Ten() {
     Var Digit = "";
     Var X = 1;
     while (X < 11) {
-        Digit +="<br>"+X;
-        X + +;
+        Digit += "<br>"+X;
+        X++;
     }
-    document.getElementById("Count_To_Ten").innerHTML=Digit;
+    document.getElementById("Counting_to_Ten").innerHTML = Digit;
